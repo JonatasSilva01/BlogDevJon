@@ -2,22 +2,23 @@ import React from 'react';
 import { ICardboxData } from '../../interfaces/ICardbox';
 import styled from 'styled-components';
 
-  const Cardbox: React.FC<ICardboxData> = ({to, description, title,...rest}) => {
+const Cardbox: React.FC<ICardboxData> = ({to, description, title,...rest}) => {
 
-    return (
-        <React.Fragment>
+  return (
+      <React.Fragment>
+          <CardboxMargem>
             <CardBox href={to || '/'} {...rest}>
-                <h1>{title || 'Teste'}</h1>
-                <p>{description || 'Description Teste'}</p>
+                <h1>{title || ''}</h1>
+                <p>{description || ''}</p>
             </CardBox>
-        </React.Fragment>
-    )   
-  }
+          </CardboxMargem>
+      </React.Fragment>
+  )   
+}
 
 const CardBox = styled.a<ICardboxData>`
   width: 100%;
-  max-width: 500px;
-  height: 300px;
+  height: 100%;
 
   cursor: pointer;
 
@@ -48,6 +49,14 @@ const CardBox = styled.a<ICardboxData>`
   background: ${(props) => (props.isimage ? `url(${(props?.imageurl)})` : "#4b4848")};
   background-size: cover;
   background-position: center;
+`;
+
+const CardboxMargem = styled.div`
+  background-color: #000;
+
+  max-width: 500px;
+  height: 200px;
+  width: 100%;
 `;
 
 export default Cardbox;

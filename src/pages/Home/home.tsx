@@ -50,6 +50,7 @@ const MainComponent = styled.section<HomeConfigurationProp>`
     
     section.slider {
         max-width: 1500px;
+        width: 100%;
         overflow: hidden;
         display: flex;
         gap: 1rem;
