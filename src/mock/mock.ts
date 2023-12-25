@@ -1,3 +1,4 @@
+import { MockCardboxs } from '../@types/TypeListCardBox';
 import { MockLinks } from "../@types/TypeListHeader";
 
 export const mockLink: MockLinks[] = [
@@ -32,3 +33,43 @@ export const mockLink: MockLinks[] = [
         link:'/contact',
     }
 ];
+
+
+export const mockCardbox: MockCardboxs[] = [
+    {
+        title: 'React',
+        description: 'Venha ver meus projetos em React',
+        imageurl: 'https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/1282566/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png',
+        isImage: "true",
+        to: 'https://www.google.com',
+    },
+    {
+        title: 'C#/.NET',
+        description: 'Meus conhecimentos em OOP, Architure!',
+        imageurl: 'https://th.bing.com/th/id/R.4c407f10e3130ffe3ec0f88d3c6285d6?rik=wrBzzGbmyqFPzQ&riu=http%3a%2f%2fbugnetproject.com%2fwp-content%2fuploads%2f2018%2f04%2fnet-framework-2-1.jpg&ehk=AwbajTRtBQ30FGkL19FxDn5OOHQ%2fpwUl%2boZtEdwPXjY%3d&risl=&pid=ImgRaw&r=0',
+        isImage: "true",
+        to: '/im',
+    },
+    {
+        title: 'Typescript/Javascript',
+        description: 'Meus conhecimentos em typescript, javascript e Node.js',
+        imageurl: '#',
+        isImage: "false",
+        to: '#',
+    },
+    {
+        title: 'Docker/Azure/AWS',
+        description: 'Conhecimentos principais em Devops e algumas coisas em cloud',
+        imageurl: '#',
+        isImage: "false",
+        to: '#',
+    },
+    {
+        title: 'Mordenidade a cima do padrão!',
+        description: 'Conheça minhas principais tecnologias de estilo com CSS & JavaScript/Typescript',
+        imageurl: '#',
+        isImage: "false",
+        to: '#',
+    },
+
+]
