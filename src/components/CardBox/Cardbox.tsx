@@ -19,24 +19,19 @@ const Cardbox: React.FC<ICardboxData> = ({to, description, title,...rest}) => {
 const CardBox = styled.a<ICardboxData>`
   width: 100%;
   height: 100%;
-
   cursor: pointer;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   gap: 1rem;
-
   margin: 0 auto;
-
   border-radius: 1rem;
+  
 
   h1 {
     font-weight: bold;
-    color: white;
-    
+    color: white;    
     font-size: 3rem;
   }
 
@@ -52,8 +47,7 @@ const CardBox = styled.a<ICardboxData>`
 `;
 
 const CardboxMargem = styled.div`
-  background-color: #000;
-
+  background-color: transparent;
   max-width: 500px;
   height: 200px;
   width: 100%;

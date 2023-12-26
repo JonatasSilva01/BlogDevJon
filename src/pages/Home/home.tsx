@@ -3,8 +3,10 @@ import styled from "styled-components";
 import HeaderComponent from "../../components/Header/Header";
 import { mockCardbox, mockLink } from "../../mock/mock";
 import ThemeDefault from "../../Themes/ThemeDefault";
-import { DescriptionFunction, ImagesUrl } from "../../util/util.";
+import { DescriptionFunction, ImagesUrl, } from "../../util/util.";
+
 import Cardbox from '../../components/CardBox/Cardbox';
+import Content from '../../components/Content/Content';
 
 interface HomeConfigurationProp {
     dark?: string;
@@ -39,6 +41,9 @@ const Home: React.FC <HomeConfigurationProp> = () => {
                             />
                         ))}
                     </section>
+                    <section className='featured-content'>
+                        <Content />
+                    </section>
                 </MainComponent>
             </ThemeDefault>
         </React.Fragment>
@@ -49,12 +54,26 @@ const MainComponent = styled.section<HomeConfigurationProp>`
     width: 100%;
     
     section.slider {
-        max-width: 1500px;
+        max-width: 1000px;
         width: 100%;
         overflow: hidden;
         display: flex;
         gap: 1rem;
         margin: 10px auto;
-    }    
+
+
+        position: absolute;
+        top: 40rem;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    section.featured-content {
+        width: 100%;
+        height: 50vh;
+
+        background-color: black;
+    }
 `;
 export default Home;

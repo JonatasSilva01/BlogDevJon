@@ -10,6 +10,16 @@ export function ImagesUrl() {
     return ''; 
 }
 
+export function ImagesUrlAndDescription() {  
+  for (const value of mockLink) {
+    if (window.location.pathname === value.link) {
+      return value.backgroundImageUrl && value.description;
+    }
+  }
+
+  return ''; 
+}
+
 export function DescriptionFunction() {
   for (const value of mockLink) {
     if (window.location.pathname === value.link) {

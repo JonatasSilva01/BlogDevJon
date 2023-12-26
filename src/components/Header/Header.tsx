@@ -35,7 +35,7 @@ const HeaderComponent: React.FC<IHeaderProps> = ({title, image, listlink, descri
 
 const HeaderBox = styled.header<IHeaderProps>`
     width: 100%;
-    height: 50vh;
+    height: 100vh;//50vh
     
     
     div {
@@ -50,13 +50,17 @@ const HeaderBox = styled.header<IHeaderProps>`
 
     .image-text {
         display: flex;
+        justify-content: center;
+        align-items: center;
 
         div > h1 {
             font-size: 5vw;
+            padding: 2rem;
             color: white;
+            background: #0000007f;
             text-align: center;
             width: 100%;
-            margin: 4vw auto;
+            margin: 8vw auto;
 
             strong {
                 color: red;

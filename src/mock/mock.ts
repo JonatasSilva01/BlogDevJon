@@ -5,7 +5,7 @@ export const mockLink: MockLinks[] = [
     { 
         titleLink: 'Home',
         backgroundImageUrl: 'https://wallup.net/wp-content/uploads/2016/01/58559-universe-galaxy-space-stars-planet-space_art.jpg',
-        description: 'Bem vindos essa é minha pagina web',
+        description: 'Bem vindo grande visitante!!',
         link:'/',
     },
     { 
@@ -23,7 +23,7 @@ export const mockLink: MockLinks[] = [
     { 
         titleLink: 'Linguagens',
         backgroundImageUrl: 'https://wallpaperaccess.com/full/1325710.jpg',
-        description: 'Vejam minhas stacks que normalmente trabalho!',
+        description: 'Minhas stacks de trabalho',
         link:'/languages',
     },
     { 
